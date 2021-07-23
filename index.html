@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="Images/favicon-16x16.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="./dist/css/main.css" />
+  <title>Map-IT</title>
+</head>
+
+<body>
+  <main>
+    <div class="logo">
+      <img class="logo--img" src="Images/logo.png" />
+      <label>Map-IT</label>
+      <h1>Made with ❤ by NSVegur</h1>
+      <button class="reset">reset</button>
+    </div>
+    <ul class="workouts">
+      <li class="form-list">
+        <form class="form  hidden">
+          <div class="type">
+            <label>Type</label>
+            <select class="type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+          <div>
+            <label>Distance</label>
+            <input class="Distance" type="text" placeholder="km" />
+          </div>
+          <div>
+            <label>Duration</label>
+            <input class="Duration" type="text" placeholder="min" />
+          </div>
+          <div class="cadence">
+            <label>Cadence</label>
+            <input class="cadenceInput type=" text" placeholder="steps/min" />
+          </div>
+          <div class="elevation hidden">
+            <label>Ele Gain</label>
+            <input class="elevationInput" type="text" placeholder="meters" />
+          </div>
+          <div style="grid-row: 3/4; grid-column: 2/3;">
+            <input class="submit" type="submit" />
+          </div>
+        </form>
+      </li>
+      <li class="worked worked-cycling hidden" data-id="123456">
+        <label>Cycling</label>
+        <div class="worked-div">
+          <div>🚴🏻‍♀️ 5km</div>
+          <div>⌚ 5hr</div>
+          <div>⚡ 5km/hr</div>
+          <div>⛰ 5m</div>
+        </div>
+      </li>
+      <li class="worked worked-running hidden" data-id="123456">
+        <label>Running</label>
+        <div class="worked-div">
+          <div>🏃🏻‍♂️ 5km</div>
+          <div>⌚ 5hr</div>
+          <div>⚡ 5km/hr</div>
+          <div>🦶 5spm</div>
+        </div>
+      </li>
+    </ul>
+  </main>
+  <div id="map">
+  </div>
+</body>
+
+</html>
