@@ -408,24 +408,5 @@ form .submit {
               transform: translateX(0vw);
     }
   }
-  body {
-    height: 100vh;
-    margin-top: 0;
-    border-radius: 0;
-  }
-  body main {
-    margin-top: 0;
-    border-radius: 0;
-  }
-  body #map {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
-  .reset {
-    margin-left: 20%;
-  }
-  form input {
-    width: 70%;
-  }
 }
 /*# sourceMappingURL=main.css.map */
