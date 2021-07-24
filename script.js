@@ -179,7 +179,7 @@ class App {
      <label>${workout.description}</label>
      <div class="worked-div">
        <div>🚴🏻‍♀️ ${workout.distance}km</div>
-       <div>⌚ ${workout.duration}hr</div>
+       <div>⌚ ${workout.duration}min</div>
        <div>⚡ ${workout.speed.toFixed(1)}km/hr</div>
        <div>⛰ ${workout.elevationGain}m</div>
      </div>
@@ -192,7 +192,7 @@ class App {
       <label>${workout.description}</label>
       <div class="worked-div">
         <div>🏃🏻‍♂️ ${workout.distance}km</div>
-        <div>⌚ ${workout.duration}5hr</div>
+        <div>⌚ ${workout.duration}min</div>
         <div>⚡ ${workout.pace.toFixed(1)}min/km</div>
         <div>🦶 ${workout.cadence}spm</div>
       </div>
